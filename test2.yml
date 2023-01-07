@@ -5,6 +5,7 @@
      git:
        repo: https://github.com/ravikantchauhan/Linux_monitor.git
        dest: /home/
+       sudo: true
        clone: yes
        update: yes
   #tasks:
