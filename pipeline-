@@ -1,0 +1,15 @@
+pipeline{
+    agent any
+    stages {
+        stage('SCM Checkout'){
+            steps{
+            git branch: 'main', url: 'https://github.com/ravikantchauhan/ansible.git'
+            }
+        }
+        stage ('Execute ansible'){
+            steps{
+               ansiblePlaybook credentialsId: 'a85338c1-a460-492c-822b-d629c0049130', disableHostKeyChecking: true, installation: 'ansible', inventory: 'host.inv', playbook: 'test.yml'
+            }
+        }
+    }
+}
