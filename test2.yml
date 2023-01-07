@@ -4,7 +4,7 @@
  - name: Clone a github repository
      git:
        repo: https://github.com/ravikantchauhan/Linux_monitor.git
-       dest: /home/repos/
+       dest: /home/
        clone: yes
        update: yes
   #tasks:
