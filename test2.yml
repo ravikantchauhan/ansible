@@ -3,7 +3,7 @@
   tasks:
  - name: Clone a github repository
     ansible.builtin.git:
-       repo: https://github.com/ravikantchauhan/Linux_monitor.git
+       repo: 'https://github.com/ravikantchauhan/Linux_monitor.git'
        dest: /home/
        sudo: true
        clone: yes
