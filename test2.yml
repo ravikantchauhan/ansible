@@ -9,5 +9,5 @@
        clone: yes
        update: yes
   #tasks:
-  - name: Installation
+  #- name: Installation
     shell: bash filesystem_usage.sh 2
